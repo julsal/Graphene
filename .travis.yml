@@ -8,7 +8,7 @@ before_install:
   - "./install-DiscourseSimplification.sh"
   - "git clone https://gitlab.com/julsal/dparser.git"
   - "cd dparser"
-  - "pip install -r requirements.txt"
+  - "pip3 install -r requirements.txt --user the-dependency-i-need"
   - "python3 dparser/service.py &"
   - "cd .."
 notifications:
